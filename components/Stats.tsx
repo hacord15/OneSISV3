@@ -26,9 +26,10 @@ export default function Stats() {
                     : "none",
               }}
             >
+              {/* ✅ Sirf font-family badla – baaki sab original */}
               <span
                 style={{
-                  fontFamily: "var(--font-playfair)",
+                  fontFamily: "var(--font-display)", // pehle --font-playfair
                   fontSize: "clamp(24px, 2.8vw, 36px)",
                   fontWeight: 400,
                   color: "#A12329",
@@ -40,7 +41,7 @@ export default function Stats() {
               </span>
               <span
                 style={{
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-sans)", // pehle --font-inter
                   fontSize: 14,
                   fontWeight: 500,
                   letterSpacing: "0.2em",

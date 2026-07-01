@@ -11,11 +11,11 @@ export default function CTA() {
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col items-center text-center">
 
-        {/* Tag */}
+        {/* Tag – ab --font-sans (Barlow) */}
         <span
           className="mb-7 block"
           style={{
-            fontFamily: "var(--font-inter)",
+            fontFamily: "var(--font-sans)", // pehle --font-inter
             fontSize: 10,
             fontWeight: 400,
             letterSpacing: "0.28em",
@@ -25,11 +25,11 @@ export default function CTA() {
           GET STARTED
         </span>
 
-        {/* Heading */}
+        {/* Heading – ab --font-display (Oswald) */}
         <h2
           className="mb-7"
           style={{
-            fontFamily: "var(--font-playfair)",
+            fontFamily: "var(--font-display)", // pehle --font-playfair
             fontWeight: 400,
             fontSize: "clamp(32px, 4vw, 58px)",
             lineHeight: 1.15,
@@ -44,11 +44,11 @@ export default function CTA() {
           </em>
         </h2>
 
-        {/* Sub-copy */}
+        {/* Sub-copy – ab --font-sans */}
         <p
           className="mb-12"
           style={{
-            fontFamily: "var(--font-inter)",
+            fontFamily: "var(--font-sans)", // pehle --font-inter
             fontSize: 16,
             color: "#8a9a8a",
             lineHeight: 1.8,
@@ -59,12 +59,12 @@ export default function CTA() {
           needs under one roof — with guaranteed SLAs and full transparency.
         </p>
 
-        {/* Buttons */}
+        {/* Buttons – ab --font-sans */}
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
             href="#"
             style={{
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-sans)", // pehle --font-inter
               fontSize: 11,
               fontWeight: 400,
               letterSpacing: "0.16em",
@@ -89,7 +89,7 @@ export default function CTA() {
           <Link
             href="#"
             style={{
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-sans)", // pehle --font-inter
               fontSize: 11,
               fontWeight: 400,
               letterSpacing: "0.16em",

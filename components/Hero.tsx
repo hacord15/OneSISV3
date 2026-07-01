@@ -21,7 +21,7 @@ export default function Hero() {
         <source src="/hero_banner2.webm" type="video/webm" />
       </video>
 
-      {/* Right-side dark gradient — only behind the text area, for readability */}
+      {/* Right-side dark gradient */}
       <div
         className="absolute inset-0"
         style={{
@@ -31,7 +31,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Extra soft vignette behind text block specifically */}
+      {/* Extra soft vignette */}
       <div
         className="absolute inset-0"
         style={{
@@ -41,47 +41,25 @@ export default function Hero() {
         }}
       />
 
-      {/* CONTENT — right aligned, open on video */}
+      {/* CONTENT */}
       <div
-        className="relative w-full max-w-[1400px] mx-auto px-6 lg:px-10 pt-[60px] flex justify-end"
+        className="relative w-full max-w-[1400px] mx-auto pt-[60px] flex justify-end"
         style={{ zIndex: 10 }}
       >
-        <div className="max-w-[620px] w-full py-20 md:py-28 lg:py-32 text-left">
-
-          {/* Tag line */}
-          {/* <div className="flex items-center gap-3 mb-8 md:mb-10">
-            <span
-              style={{
-                fontFamily: "var(--font-inter)",
-                fontSize: 16,
-                fontWeight: 800,
-                letterSpacing: "0.28em",
-                color: "#e0535c",
-                textShadow: "0 2px 10px rgba(0,0,0,0.9)",
-              }}
-            >
-              A 100% SIS GROUP COMPANY
-            </span>
-            <div
-              style={{
-                width: 40,
-                height: 1,
-                background: "linear-gradient(to left, #A1232B, #F7F7F7)",
-                flexShrink: 0,
-              }}
-            />
-          </div> */}
-
-          {/* Heading */}
+        {/* Right shift with negative margin */}
+        <div className="max-w-[780px] w-full py-20 md:py-28 lg:py-32 text-left px-6 lg:pl-10 lg:pr-0 ml-auto -mr-2 lg:-mr-4">
+          
+          {/* HEADING - Size thoda kam (42px to 68px) */}
           <h1
-            className="mb-7 md:mb-9"
+            className="mb-7 md:mb-10"
             style={{
-              fontFamily: "var(--font-playfair)",
-              fontWeight: 400,
+              fontFamily: "var(--font-display)",
+              fontWeight: 600,
               color: "#F7F7F7",
-              lineHeight: 1.1,
-              fontSize: "clamp(38px, 4.6vw, 62px)",
+              lineHeight: 1.05,
+              fontSize: "clamp(42px, 5.5vw, 68px)", // 🔽 Kam kiya
               textShadow: "0 4px 28px rgba(0,0,0,0.9), 0 1px 6px rgba(0,0,0,0.95)",
+              letterSpacing: "0.01em",
             }}
           >
             Your One-Stop Partner
@@ -101,28 +79,26 @@ export default function Hero() {
             Management
           </h1>
 
-          {/* Sub-copy */}
+          {/* SUB-COPY - Size thoda kam (16px to 19px) */}
           <p
-            className="mb-10 md:mb-12"
+            className="mb-10 md:mb-14"
             style={{
-              fontFamily: "var(--font-inter)",
-              fontSize: 15,
-              fontWeight: 600,
+              fontFamily: "var(--font-sans)",
+              fontSize: "clamp(16px, 1.2vw, 19px)", // 🔽 Kam kiya
+              fontWeight: 500,
               color: "rgba(247,247,247,0.92)",
               lineHeight: 1.8,
               textShadow: "0 2px 16px rgba(0,0,0,0.9)",
+              maxWidth: "90%",
             }}
           >
             Technology-driven, self-delivered facility solutions backed by
             India's #1{" "}
             <span style={{ color: "#e0a0a4" }}>business</span> services
-            group.{" "}
-            {/* <span style={{ color: "#e0a0a4" }}>
-              Transform. Reduce. Enable. Enhance.
-            </span> */}
+            group.
           </p>
 
-          {/* Buttons */}
+          {/* BUTTONS - Size aur padding thodi kam */}
           <div className="flex flex-wrap justify-end gap-4">
             <Link
               href="#"
@@ -130,11 +106,11 @@ export default function Hero() {
               style={{
                 border: "1px solid #A1232B",
                 color: "#F7F7F7",
-                fontFamily: "var(--font-inter)",
-                fontSize: 12,
-                fontWeight: 400,
+                fontFamily: "var(--font-sans)",
+                fontSize: 13, // 🔽 Kam kiya (14 se 13)
+                fontWeight: 600,
                 letterSpacing: "0.16em",
-                padding: "15px 28px",
+                padding: "16px 32px", // 🔽 Padding kam
                 transition: "all 0.25s ease",
                 backgroundColor: "#A22229",
               }}
@@ -154,11 +130,11 @@ export default function Hero() {
               style={{
                 border: "1px solid rgba(247,247,247,0.5)",
                 color: "#F7F7F7",
-                fontFamily: "var(--font-inter)",
-                fontSize: 11,
-                fontWeight: 400,
+                fontFamily: "var(--font-sans)",
+                fontSize: 12, // 🔽 Kam kiya (13 se 12)
+                fontWeight: 600,
                 letterSpacing: "0.16em",
-                padding: "15px 28px",
+                padding: "16px 32px", // 🔽 Padding kam
                 transition: "all 0.25s ease",
                 backgroundColor: "rgba(0,0,0,0.35)",
               }}
@@ -180,11 +156,11 @@ export default function Hero() {
               style={{
                 border: "1px solid rgba(247,247,247,0.5)",
                 color: "#F7F7F7",
-                fontFamily: "var(--font-inter)",
-                fontSize: 11,
-                fontWeight: 400,
+                fontFamily: "var(--font-sans)",
+                fontSize: 12, // 🔽 Kam kiya
+                fontWeight: 600,
                 letterSpacing: "0.16em",
-                padding: "15px 28px",
+                padding: "16px 32px", // 🔽 Padding kam
                 transition: "all 0.25s ease",
                 backgroundColor: "rgba(0,0,0,0.35)",
               }}
@@ -201,12 +177,12 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Scroll hint */}
+          {/* SCROLL HINT - Size thoda kam */}
           <div className="flex items-center justify-end gap-3 mt-14 md:mt-16" style={{ opacity: 0.65 }}>
             <span
               style={{
-                fontFamily: "var(--font-inter)",
-                fontSize: 10,
+                fontFamily: "var(--font-sans)",
+                fontSize: 11, // 🔽 Kam kiya (13 se 11)
                 letterSpacing: "0.22em",
                 color: "#e0a0a4",
                 textShadow: "0 2px 10px rgba(0,0,0,0.85)",
@@ -222,7 +198,6 @@ export default function Hero() {
               }}
             />
           </div>
-
         </div>
       </div>
     </section>
