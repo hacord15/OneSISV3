@@ -25,7 +25,7 @@ const techItems = [
 export default function Technology() {
   return (
     <section
-      className="py-20 md:py-28"
+      className="py-10 md:py-20"
       style={{ backgroundColor: "#f0f0ee" }}
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">

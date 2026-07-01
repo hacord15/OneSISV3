@@ -7,7 +7,7 @@ export default function CTA() {
   return (
     <section
       style={{ backgroundColor: "#f0f0ee" }}
-      className="py-24 md:py-32"
+      className="py-15 md:py-20"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col items-center text-center">
 
